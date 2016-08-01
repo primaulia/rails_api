@@ -1,5 +1,6 @@
 class Api::UsersController < ApplicationController
   def index
+    sleep 5
     @users = User.all
 
     respond_to do |format|
@@ -9,6 +10,7 @@ class Api::UsersController < ApplicationController
   end
 
   def show
+    sleep 5
     @user = User.find_by( params[:id] )
 
     respond_to do |format|
