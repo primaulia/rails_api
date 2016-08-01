@@ -28,6 +28,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# allow cors ajax request
+gem 'rack-cors'
+
+
 # faker gem for seeding database
 gem 'faker'
 
